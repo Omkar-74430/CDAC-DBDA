@@ -1,0 +1,62 @@
+Examples of equijoins
+--------------------------
+
+select ename,job,dept.deptno,dname
+from dept,emp
+where emp.deptno=dept.deptno;
+
+
+
+select ename,job,dept.deptno,dname
+from dept,emp
+where emp.deptno=dept.deptno and job='CLERK'
+order by dept.deptno;
+
+
+
+select ename,loc from emp,dept
+where emp.deptno=dept.deptno;
+
+
+example of non equi join
+-------------------------
+
+select ename,sal,grade
+ from emp e,salgrade s
+	where e.sal between s.losal and s.hisal;
+
+
+select ename,sal,grade
+ from emp e,salgrade s
+ where (e.sal between s.losal and s.hisal) and s.grade=3;
+
+
+
+self join
+-----------
+
+SELECT e1.ename employee,e2.ename manager
+FROM emp e1, emp e2 
+WHERE e1.mgr = e2.empno;
+
+
+Left outer join
+----------------
+
+
+SELECT empno,ename,emp.deptno,dname,loc
+FROM emp
+LEFT JOIN dept
+ON emp.deptno=dept.deptno;
+
+
+
+Right outer join
+------------------
+
+SELECT empno,ename,emp.deptno,dname,loc
+FROM emp
+RIGHT JOIN dept
+ON emp.deptno=dept.deptno;
+
+

@@ -1,0 +1,32 @@
+select concat(concat(ename,' is a '),job) "concatenation"from emp where ename='SMITH';
+
+select ename,LOWER(ename) from emp;
+
+select UPPER('mysql') "Upper" ;
+
+select LENGTH('Database') "Length of string" ;
+
+select REVERSE ('Database') ;
+
+select ename,LPAD(ename,11,'*') from emp;
+
+select ename,RPAD(ename,11,'*') from emp;
+
+SELECT LTRIM("    SQL Tutorial") ;
+
+SELECT RTRIM("SQL Tutorial     ") ;
+
+select substr('Database Technologies',5,4) ;
+
+select substr('Database Technologies',5) ;
+
+select substr('Database Technologies',-5) ;
+
+
+SELECT INSTR('CORPORATE FLOOR','OR') "Instring" ;
+
+select REPLACE('JACK AND JUE','J','BL') "Changes" ;
+
+
+
+

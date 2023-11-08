@@ -1,0 +1,26 @@
+select ceil(1.3) ;
+
+select floor(1.3) ;
+
+select power(3,2) ;
+
+select sqrt(36.123) ;
+
+select round(55.556,2) ;
+
+select truncate(55.556,2) ;
+
+select min(sal),max(sal),avg(sal),sum(sal) from emp;
+
+select count(comm) from emp;
+
+select count(*) from emp;
+
+select count(distinct job),count(comm),count(*) from emp;
+
+select sal,comm,greatest(sal, ifnull(comm,0)) from emp;
+
+Date Functions
+----------------------------
+month,monthname,year, day,dayname, sysdate()
+select ename, monthname(hiredate) from emp;
