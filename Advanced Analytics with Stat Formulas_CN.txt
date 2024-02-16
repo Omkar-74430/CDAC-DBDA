@@ -1,0 +1,446 @@
+
+https://www.cuemath.com/data/critical-value/
+
+
+
+Empirical rules
+---------------
+
+68% falls within the first standard deviation (µ ± σ)
+
+95% within the first two standard deviations (µ ± 2σ)
+
+99.7% within the first three standard deviations (µ ± 3σ)
+
+
+
+values of alpha for z-test
+--------------------------
+
+Confidence			Significance	Critical Value
+
+(1–α) g 100%		  α				Zα/2
+
+90% 				0.10 			1.645
+
+95%					0.05			1.960
+
+98%					0.02			2.326
+
+99%					0.01			2.576
+
+
+
+
+
+1) Calculate test-hypothesis or t_value :- t =   (X‾ - μ0) / (s / √n)
+
+		              
+x(bar) - mean of sample
+μ - mean of population
+s - standard deviation of sample
+√n - No of samples (no of samples in sample)	
+
+
+
+
+2) Alternative Hypothesis >/<  :- It is One Tailed Test
+
+   Alternative Hypothesis > :- It is Right Tailed Test
+
+   Alternative Hypothesis < :- It is Left Tailed Test
+
+   Alternative Hypothesis ≠ :- It is Two Tailed Test
+
+
+3) Level Of Significance :- 1 - Confidence level 
+
+
+4) Type I error:  You reject the null hypothesis when it is actually true.
+		  The probability of committing a Type I error is equal to the significance level, often called alpha, and denoted as α.
+		  Eg.- When you rejected the important call.  
+
+
+5)Type II error: You fail to reject the null hypothesis when it is actually false.
+		  Eg. When you watch worthless movie. 
+
+
+
+6) Standard Deviation :- Square Root Of Variance.  
+   
+   Variance :- Square Of Standard Deviation.
+
+
+
+7) Y = β0 +  β1 X1 + β2 X2……+ βn Xn
+
+  Here, β - Coeffient of X / Slope of line  (if +ve then X is positively correlated with Y, if -ve X is negatively correlated with Y)
+
+	Y - Dependent Var
+
+	X - Independent Var
+
+
+
+8) Correlation between variables is 0.9. It signifies that the relationship between variables is fairly strong.
+On the other hand, p-value and t-statistics merely measure how strong is the evidence that there is non zero association.
+Even a weak effect can be extremely significant given enough data.
+
+
+
+
+9)The statistical distribution is used for testing the difference between two population variances is the F-DISTRIBUTION .
+
+
+10)Coefficient of Variation = ( standard deviation / sample mean ) x 100
+
+
+11) z-score = (x – μ) / σ
+
+where:
+
+x: individual data value
+μ: population mean
+σ: population standard deviation
+
+
+Population Standard score:
+
+A measure called the standard score gives us the number of standard deviations a particular observation lies below or above the mean.
+Formula --> Population standard score =  (x - mu)/sigma
+
+
+
+----------
+12) TESTS
+----------
+
+
+Parametric -- T - test, Z - test, F - test, ANOVA
+
+Non- parametric -- chi square test, u test (Mann Whitney), Kruskal-Wallis H-test
+
+
+PARAMETRIC TESTS
+----------------
+
+
+1) T-test :
+----------
+
+sample size < 30
+
+population standard deviation is not available
+
+counterpart - Mann-Whitney ‘U
+
+
+a)One Sample T-test: To compare a sample mean with that of the population mean.
+
+t =   (X‾ - μ) / (s / √n)
+
+where,
+
+x‾  is the sample mean
+
+s is the sample standard deviation
+
+n is the sample size
+
+μ is the population mean
+
+
+
+b)Two-Sample T-test: To compare the means of two different samples.
+
+t = (X1‾ - X2‾) / √(s1^2/n1 + s2^2/n2)
+
+where,
+
+x̄1 is the sample mean of the first group
+
+x̄2 is the sample mean of the second group
+
+S1 is the sample-1 standard deviation
+
+S2 is the sample-2 standard deviation
+
+n1 is the sample size of sample 1
+
+n2 is the sample size of sample 2
+
+
+
+c)Paired t-test
+
+• Used to compare two means that are repeated measures for the same participants — scores might be repeated across different 
+  measures or across time 
+
+
+
+2) Z-test :
+----------
+
+sample size > 30
+
+It is used to determine whether the means are different when the population variance is known
+
+population standard deviation is known
+
+
+
+a)One Sample Z-test: To compare a sample mean with that of the population mean.
+
+z =   (X‾ - μ) / (σ/ √n)
+
+x‾ is the sample mean
+
+σ is the  population standard  deviation
+
+n is the sample  size
+
+μ is the population  mean
+
+
+
+b)Two Sample Z-test: To compare the means of two different samples.
+
+z = (X1‾ - X2‾) / √(σ1^2/n1 + σ2^2/n2)
+
+where,
+
+x̄1‾ is the sample mean of the first group
+
+x̄2‾ is the sample mean of the second group
+
+σ1 is the sample-1 standard deviation
+
+σ2 is the sample-2 standard deviation
+
+n1 is the sample size of sample 1
+
+n2 is the sample size of sample 2
+
+
+
+
+3) F-Test:
+----------
+
+Based on F-distribution
+
+It is a test for the null hypothesis that two normal populations have the same variance.
+
+An F-test is regarded as a comparison of equality of sample variances.
+
+F-statistic is simply a ratio of two variances calculates as:
+
+F = s1^2/s2^2
+
+By changing the variance in the ratio, F-test has become a very flexible test. It can then be used to:
+
+-Test the overall significance for a regression model.
+-To compare the fits of different models and
+-To test the equality of means.
+
+
+ 
+
+
+4) ANOVA
+----------
+
+• Analysis of Variance
+
+• Extension of Z-test and T-test
+
+• It is used to test the significance of the differences in the mean values among more than two sample groups.
+
+
+Used to answer the question:
+• What is the probability that two samples come from populations that have the same variance? 
+• What is the probability that three or more samples come from the same population?
+
+
+
+ANOVA: Rational
+
+• Basic idea is to partition total variation of the data into two sources
+	• Variation within levels (groups)
+	• Variation between levels (groups)
+• If H0 is true the standardized variances are equal to one another
+
+
+			 Sum of squares groups (SSG) / degree of freedom (groups)
+F Distribution = --------------------------------------------------------
+			 Sum of squares errors (SSE) / degree of freedom (error)
+
+
+			 Sum of squares between groups / degree of freedom
+F Distribution = --------------------------------------------------
+			 Sum of squares within groups / degree of freedom
+
+
+F-statistic = variance between the sample means/variance within the sample
+
+
+
+
+NON-PARAMETRIC TESTS :
+---------------------
+
+
+1) chi square test
+--------------------
+
+A Chi-Square goodness of fit test is used to determine whether or not a categorical variable follows a hypothesized distribution.
+
+A Chi-Square goodness of fit test uses the following null and alternative hypotheses:
+
+H0: (null hypothesis) A variable follows a hypothesized distribution.
+H1: (alternative hypothesis) A variable does not follow a hypothesized distribution.
+We use the following formula to calculate the Chi-Square test statistic X2:
+
+X2 = Σ(O-E)^2 / E
+
+where:
+
+Σ: is a fancy symbol that means “sum”
+O: observed value
+E: expected value
+
+
+---------------------OR--------------------------------
+
+chi square test
+---------------
+
+
+It is a non-parametric test of hypothesis testing.
+
+As a non-parametric test, chi-square can be used:
+
+ - test of goodness of fit.
+ - as a test of independence of two variables.
+
+It makes a comparison between the expected frequencies and the observed frequencies
+
+Greater the difference, the greater is the value of chi-square.
+
+It is also known as the “Goodness of fit test” which determines whether a particular distribution fits the observed data or not.
+
+
+
+2) Mann Whitney ( U Test )
+---------------------------
+
+• Also known as Wilcoxon Rank Sum Test
+
+• This test can be used to investigate whether two independent samples were selected from populations having the same distribution
+
+• Uses ranking to determine the result
+
+• Also known as:
+
+  - Mann-Whitney Wilcoxon Test.
+  - Mann-Whitney Wilcoxon Rank Test.
+
+• Maximum value of “U” is ‘n1*n2‘ and the minimum value is zero.
+
+
+
+3) Kruskal-Wallis H-test
+----------------------
+
+1. It is a non-parametric test of hypothesis testing.
+
+2. This test is used for comparing two or more independent samples of equal or different sample sizes.
+
+3. It extends the Mann-Whitney-U-Test which is used to comparing only two groups.
+
+4. One-Way ANOVA is the parametric equivalent of this test. And that’s why it is also known as ‘One-Way ANOVA on ranks.
+
+5. It uses ranks instead of actual data.
+
+6. It does not assume the population to be normally distributed.
+
+7. The test statistic used here is “H”.
+
+
+
+
+13) Standard Deviation
+----------------------
+
+x (bar) -- sample mean
+n -- sample size
+s -- sample sd
+
+mu -- population mean
+N -- population size
+sigma -- population sd
+
+
+• It is measure of dispersion of of data
+• A low standard deviation indicates that the data points tend to be close to the mean
+• A high standard deviation indicates that the data points are spread out over a wider range of values
+
+
+
+
+
+14) R-squared
+-------------
+
+R-squared value is a statistical measure of how close the data are to the fitted regression line
+
+It is also known as coefficient of determination or coefficient of multiple determination
+
+Σ(y_pred -  y‾)^2 /Σ(yi -  y‾)^2
+
+
+
+
+
+
+
+Parameter  --->  Is a measure that describes entire population
+Statistics ---> Is a measure that describes only a sample of population
+
+
+
+
+
+Individuals (ROW)
+
+• Objects included in the study
+• E.g. records, people, objects
+
+Variable/random variable/attribute (COLUMN)
+
+• Characteristics of individuals to be measured or observed
+• E.g. age or name of the person
+
+
+
+
+• Interval
+
+• There is no true zero
+- Temperature (celcius / farheneit)
+
+
+
+• Ratio
+
+• There is a true zero
+-Temperature (kelvin)
+-Distance
+-Age
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+A statistician calculates a 95% confidence interval for and  is known. The confidence interval is RS 18000 to RS 22000, the amount of the sample mean is
+
+---> (18000+22000)/2 = 20000
